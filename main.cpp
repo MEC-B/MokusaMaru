@@ -80,6 +80,7 @@ int main()
             robot_velocity[2] = pidRobotYow.output;
         else *pidRobotYow.target= *pidRobotYow.sensor;
 
+        //ホイール速度計算
         robot.setVelL(robot_velocity);
         robot.computeWheelVel();
         robot.rescaleWheelVel();
