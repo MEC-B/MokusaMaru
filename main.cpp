@@ -75,6 +75,7 @@ int main()
         //ロボットの移動速度を決める
         float robot_velocity[3] = {cmd.LX, cmd.LY, cmd.RX};
 
+        //yow角調整処理
         if(robot_velocity[2] == 0)
             robot_velocity[2] = pidRobotYow.output;
         else *pidRobotYow.target= *pidRobotYow.sensor;
