@@ -72,6 +72,7 @@ int main()
 
     while(1)
     {
+        //ロボットの移動速度を決める
         float robot_velocity[3] = {cmd.LX, cmd.LY, cmd.RX};
 
         if(robot_velocity[2] == 0)
