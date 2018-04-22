@@ -66,7 +66,6 @@ int main()
     imu.performCalibration();
     imu.startAngleComputing();
 
-    //設定
     robot.imu_yow = &imu.angle[2];
     pidRobotYow.sensor = &imu.angle[2];
     pidRobotYow.start();
