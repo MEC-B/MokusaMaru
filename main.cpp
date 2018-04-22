@@ -85,6 +85,7 @@ int main()
         robot.computeWheelVel();
         robot.rescaleWheelVel();
 
+        //モーターの駆動
         for(int i = 0; i < 3; i++)
             Motor[i].drive(robot.wheel_vel[i]);
 
