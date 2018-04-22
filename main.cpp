@@ -47,9 +47,10 @@ RotaryEncoder enc[5] = {  RotaryEncoder(p5,p6),
                           RotaryEncoder(p8,p7)
                         };
 
+//コントローラー入力のための構造体
 typedef struct controller
 {
-    int LX, LY, RX, RY;
+    float LX, LY, RX, RY;
     bool r1;
 }ctrlr;
 
