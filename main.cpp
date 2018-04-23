@@ -1,6 +1,6 @@
 #include "mbed.h"
 #include "MDD.h"
-#include "imu.h"
+#include "IMU.h"
 #include "RotaryEncoder.h"
 #include "CSV.h"
 #include "SBUS.h"
