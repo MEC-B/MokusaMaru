@@ -66,8 +66,10 @@ int main()
     imu.performCalibration();
     imu.startAngleComputing();
 
+    float target = 0;
     robot.imu_yow = &imu.angle[2];
     pidRobotYow.sensor = &imu.angle[2];
+    pidRobotYow.target = &target;
     pidRobotYow.start();
 
     while(1)
